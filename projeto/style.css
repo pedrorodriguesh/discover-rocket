@@ -16,7 +16,7 @@
     --surface-color-hover: rgba(255, 255, 255, 0.05);
     --border-color: white;
     --social-back: rgba(255, 255, 255, 0.205);
-    --switch-buton: url(assets/Sun.svg)
+    --switch-buton: url(assets/Sun.svg);
 }
 
 .light{
@@ -27,7 +27,7 @@
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --border-color: black;
     --social-back: rgba(0, 0, 0, 0.144);
-    --switch-buton: url(assets/MoonStars.svg)
+    --switch-buton: url(assets/MoonStars.svg);
 }
 
 body{
@@ -98,6 +98,8 @@ body *{
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+
+    cursor: pointer;
 }
 
 .light #switch button{
