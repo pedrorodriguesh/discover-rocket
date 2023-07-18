@@ -16,6 +16,7 @@
     --surface-color-hover: rgba(255, 255, 255, 0.05);
     --border-color: white;
     --social-back: rgba(255, 255, 255, 0.205);
+    --switch-buton: url(assets/Sun.svg)
 }
 
 .light{
@@ -26,6 +27,7 @@
     --surface-color-hover: rgba(0, 0, 0, 0.02);
     --border-color: black;
     --social-back: rgba(0, 0, 0, 0.144);
+    --switch-buton: url(assets/MoonStars.svg)
 }
 
 body{
@@ -72,12 +74,54 @@ body *{
     margin-top: 8px;
 }
 
+#switch{
+    margin-bottom: 15px;
+    
+    position: relative;
+    width: 64px;
+
+    margin: 0 auto;
+}
+
+#switch button{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    background-image: var(--switch-buton);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.light #switch button{
+    left: 0;
+}
+
+#switch span{
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    backdrop-filter: blur(4px);
+    border-radius: 9999px;
+}
+
 ul{
     list-style-type: none;
 
     display: flex;
     flex-direction: column;
     gap: 16px;
+
+    margin-top: 25px;
 }
 
 ul li a{
